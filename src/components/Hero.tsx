@@ -95,7 +95,7 @@ const Hero = () => {
                   <h3 className="text-xl font-bold text-foreground">Dr. Mauli Vora</h3>
                   <p className="text-primary font-semibold">Consultant Neurologist</p>
                   <p className="text-sm text-muted-foreground mt-1">
-                    MBBS, MD, DNB Neuro • 15+ Years Experience
+                    MBBS, MD, DNB Neuro • 2+ Years Experience
                   </p>
                 </div>
               </div>

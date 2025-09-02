@@ -4,6 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NewIndex from "./pages/NewIndex";
+import About from "./pages/About";
 import Epilepsy from "./pages/services/Epilepsy";
 import Headache from "./pages/services/Headache";
 import Stroke from "./pages/services/Stroke";
@@ -12,6 +13,7 @@ import MemoryDisorders from "./pages/services/MemoryDisorders";
 import Neuropathy from "./pages/services/Neuropathy";
 import Testimonials from "./pages/Testimonials";
 import NotFound from "./pages/NotFound";
+import ContactUs from  "./pages/ContactUs";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +25,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<NewIndex />} />
+          <Route path="/about" element={<About />} />
           <Route path="/services/epilepsy" element={<Epilepsy />} />
           <Route path="/services/headache" element={<Headache />} />
           <Route path="/services/stroke" element={<Stroke />} />
@@ -30,6 +33,8 @@ const App = () => (
           <Route path="/services/memory-disorders" element={<MemoryDisorders />} />
           <Route path="/services/neuropathy" element={<Neuropathy />} />
           <Route path="/testimonials" element={<Testimonials />} />
+	  <Route path="/contact" element={<ContactUs />} />
+	
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
