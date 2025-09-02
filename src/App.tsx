@@ -10,6 +10,7 @@ import Stroke from "./pages/services/Stroke";
 import MovementDisorders from "./pages/services/MovementDisorders";
 import MemoryDisorders from "./pages/services/MemoryDisorders";
 import Neuropathy from "./pages/services/Neuropathy";
+import Testimonials from "./pages/Testimonials";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/services/movement-disorders" element={<MovementDisorders />} />
           <Route path="/services/memory-disorders" element={<MemoryDisorders />} />
           <Route path="/services/neuropathy" element={<Neuropathy />} />
+          <Route path="/testimonials" element={<Testimonials />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

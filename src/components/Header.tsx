@@ -78,6 +78,13 @@ const Header = () => {
             </div>
 
             <a 
+              href="/testimonials" 
+              className="text-foreground hover:text-primary transition-colors duration-300 font-medium"
+            >
+              Patient Feedback
+            </a>
+
+            <a 
               href="/contact" 
               className="text-foreground hover:text-primary transition-colors duration-300 font-medium"
             >
@@ -141,6 +148,13 @@ const Header = () => {
                   </div>
                 )}
               </div>
+              
+              <a 
+                href="/testimonials" 
+                className="block py-2 text-foreground hover:text-primary transition-colors duration-300"
+              >
+                Patient Feedback
+              </a>
               
               <a 
                 href="/contact" 
