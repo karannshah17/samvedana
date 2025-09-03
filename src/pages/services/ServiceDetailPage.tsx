@@ -69,12 +69,17 @@ const ServiceDetailPage = ({
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <a 
-                    href="#contact" 
+                  <button 
+                    onClick={() => {
+                      const phoneNumber = '+918200045035';
+                      const message = 'I want to schedule an appointment';
+                      const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+                      window.open(whatsappURL, '_blank');
+                    }}
                     className="btn-medical text-center"
                   >
                     Book Consultation
-                  </a>
+                  </button>
                   <a 
                     href="tel:+918200045035" 
                     className="btn-medical-outline text-center"
@@ -154,12 +159,17 @@ const ServiceDetailPage = ({
               Book your consultation today for expert diagnosis and treatment.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a 
-                href="#contact" 
+              <button 
+                onClick={() => {
+                  const phoneNumber = '+918200045035';
+                  const message = 'I want to schedule an appointment';
+                  const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+                  window.open(whatsappURL, '_blank');
+                }}
                 className="btn-medical"
               >
                 Schedule Appointment
-              </a>
+              </button>
               <a 
                 href="tel:+918200045035" 
                 className="btn-medical-outline"

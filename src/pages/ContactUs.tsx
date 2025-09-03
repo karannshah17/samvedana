@@ -17,8 +17,11 @@ const ContactUs: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission logic
-    console.log('Form submitted:', formData);
+    // Send WhatsApp message with form data
+    const phoneNumber = '+918200045035';
+    const message = `Hi, I'm ${formData.name}. Email: ${formData.email}. Message: ${formData.message}`;
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappURL, '_blank');
   };
 
   return (
@@ -33,7 +36,7 @@ const ContactUs: React.FC = () => {
 
     <div className="grid md:grid-cols-2 gap-12 items-start">
       <div className="space-y-6">
-        <form className="bg-card p-8 rounded-xl shadow-card space-y-6">
+        <form onSubmit={handleSubmit} className="bg-card p-8 rounded-xl shadow-card space-y-6">
           <h2 className="text-2xl font-semibold text-foreground mb-4">Send a Message</h2>
 
           <div className="space-y-4">
@@ -43,6 +46,8 @@ const ContactUs: React.FC = () => {
                 type="text"
                 id="name"
                 name="name"
+                value={formData.name}
+                onChange={handleChange}
                 placeholder="Your Name"
                 className="w-full px-4 py-2 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
               />
@@ -54,6 +59,8 @@ const ContactUs: React.FC = () => {
                 type="email"
                 id="email"
                 name="email"
+                value={formData.email}
+                onChange={handleChange}
                 placeholder="Your Email"
                 className="w-full px-4 py-2 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
               />
@@ -65,6 +72,8 @@ const ContactUs: React.FC = () => {
                 id="message"
                 name="message"
                 rows={6}
+                value={formData.message}
+                onChange={handleChange}
                 placeholder="Write your message..."
                 className="w-full px-4 py-2 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
               ></textarea>

@@ -13,6 +13,11 @@ const Header = () => {
     { name: 'Movement Disorders', href: '/services/movement-disorders' },
     { name: 'Memory Disorders', href: '/services/memory-disorders' },
     { name: 'Neuropathy Treatment', href: '/services/neuropathy' },
+    { name: 'Meningoencephalitis', href: '/services/meningoencephalitis' },
+    { name: 'Back Pain & Sciatica', href: '/services/back-pain-sciatica' },
+    { name: 'Vertigo & Balance Disorders', href: '/services/vertigo-balance' },
+    { name: 'Multiple Sclerosis', href: '/services/multiple-sclerosis' },
+    { name: 'Sleep Disorders', href: '/services/sleep-disorders' },
   ];
 
   return (
@@ -25,7 +30,7 @@ const Header = () => {
             <img
               src={logo}
               alt="Samvedana Neuro Care Clinic Logo"
-              className="h-20 w-20 md:h-24 md:w-24 rounded-full border-2 border-border shadow-lg/10 			rounded-full animate-pulse-medical"
+              className="h-20 w-20 md:h-24 md:w-24 rounded-full border-2 border-border shadow-lg/10 rounded-full animate-pulse-medical rotate-180"
             />
             <div className="flex flex-col justify-center">
               <h3 className="text-2xl md:text-2xl font-bold text-foreground leading-tight">
