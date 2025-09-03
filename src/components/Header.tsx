@@ -1,10 +1,34 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import logo from '@/assets/logo.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [dropdownTimeout, setDropdownTimeout] = useState<NodeJS.Timeout | null>(null);
+
+  const handleServicesMouseEnter = () => {
+    if (dropdownTimeout) {
+      clearTimeout(dropdownTimeout);
+      setDropdownTimeout(null);
+    }
+    setIsServicesOpen(true);
+  };
+
+  const handleServicesMouseLeave = () => {
+    const timeout = setTimeout(() => {
+      setIsServicesOpen(false);
+    }, 300); // 300ms delay before closing
+    setDropdownTimeout(timeout);
+  };
+
+  useEffect(() => {
+    return () => {
+      if (dropdownTimeout) {
+        clearTimeout(dropdownTimeout);
+      }
+    };
+  }, [dropdownTimeout]);
 
   const services = [
     { name: 'Epilepsy', href: '/services/epilepsy' },
@@ -30,7 +54,7 @@ const Header = () => {
             <img
               src={logo}
               alt="Samvedana Neuro Care Clinic Logo"
-              className="h-20 w-20 md:h-24 md:w-24 rounded-full border-2 border-border shadow-lg/10 rounded-full animate-pulse-medical rotate-180"
+              className="h-20 w-20 md:h-24 md:w-24 rounded-full border-2 border-border shadow-lg/10 rounded-full animate-pulse-medical rotate-[270deg]"
             />
             <div className="flex flex-col justify-center">
               <h3 className="text-2xl md:text-2xl font-bold text-foreground leading-tight">
@@ -55,8 +79,8 @@ const Header = () => {
             {/* Services Dropdown */}
             <div
               className="relative"
-              onMouseEnter={() => setIsServicesOpen(true)}
-              onMouseLeave={() => setIsServicesOpen(false)}
+              onMouseEnter={handleServicesMouseEnter}
+              onMouseLeave={handleServicesMouseLeave}
             >
               <button className="flex items-center text-foreground hover:text-primary transition-colors font-medium">
                 Services <ChevronDown className="ml-1 h-4 w-4" />
