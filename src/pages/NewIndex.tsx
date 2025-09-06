@@ -144,26 +144,61 @@ const NewIndex = () => {
                 <div className="bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl p-8 text-center">
                   <h3 className="text-2xl font-bold text-foreground mb-4">Why Choose Us?</h3>
                   
-                  <div className="grid grid-cols-2 gap-6">
-                    <div className="space-y-2">
-                      <div className="text-3xl font-bold text-primary">15+</div>
-                      <div className="text-sm text-muted-foreground">Years Experience</div>
-                    </div>
-                    
-                    <div className="space-y-2">
-                      <div className="text-3xl font-bold text-primary">5000+</div>
-                      <div className="text-sm text-muted-foreground">Happy Patients</div>
-                    </div>
-                    
-                    <div className="space-y-2">
-                      <div className="text-3xl font-bold text-primary">6</div>
-                      <div className="text-sm text-muted-foreground">Specializations</div>
-                    </div>
-                    
-                    <div className="space-y-2">
-                      <div className="text-3xl font-bold text-primary">24/7</div>
-                      <div className="text-sm text-muted-foreground">Support</div>
-                    </div>
+                  <div className="grid gap-6">
+                    <ul className="space-y-6">
+  <li className="flex items-center space-x-4">
+    <div className="w-10 h-10 flex items-center justify-center rounded-full bg-primary/20 text-primary shadow-md">
+      <span className="text-lg font-bold">✓</span>
+    </div>
+    <div>
+      <div className="text-xl font-semibold italic text-primary">Compassionate ,Personalised Neurology care</div>
+         </div>
+  </li>
+
+  <li className="flex items-center space-x-4">
+    <div className="w-10 h-10 flex items-center justify-center rounded-full bg-primary/20 text-primary shadow-md">
+      <span className="text-lg font-bold">✓</span>
+    </div>
+    <div>
+      <div className="text-xl font-semibold italic text-primary">State Of The Art Diagnostic Tools</div>
+          </div>
+  </li>
+
+  <li className="flex items-center space-x-4">
+    <div className="w-10 h-10 flex items-center justify-center rounded-full bg-primary/20 text-primary shadow-md">
+      <span className="text-lg font-bold">✓</span>
+    </div>
+    <div>
+      <div className="text-xl font-semibold italic text-primary">Evidence Based Medicine</div>
+      
+    </div>
+  </li>
+
+  <li className="flex items-center space-x-4">
+    <div className="w-10 h-10 flex items-center justify-center rounded-full bg-primary/20 text-primary shadow-md">
+      <span className="text-lg font-bold">✓</span>
+    </div>
+    <div>
+      <div className="text-xl font-semibold italic text-primary">Patient Education & Counselling</div>
+      
+    </div>
+	
+  </li>
+<li className="flex items-center space-x-4">
+    <div className="w-10 h-10 flex items-center justify-center rounded-full bg-primary/20 text-primary shadow-md">
+      <span className="text-lg font-bold">✓</span>
+    </div>
+    <div>
+      <div className="text-xl font-semibold italic text-primary">Collaborative Care With Other Specialists
+</div>
+      
+    </div>
+	
+  </li>
+
+</ul>
+
+
                   </div>
                 </div>
               </div>

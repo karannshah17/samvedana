@@ -54,14 +54,14 @@ const Header = () => {
             <img
               src={logo}
               alt="Samvedana Neuro Care Clinic Logo"
-              className="h-20 w-20 md:h-24 md:w-24 rounded-full border-2 border-border shadow-lg/10 rounded-full animate-pulse-medical rotate-[270deg]"
+              className="h-20 w-20 md:h-24 md:w-24 rounded-full border-2 border-border shadow-lg/10 rounded-full animate-pulse-medical rotate"
             />
             <div className="flex flex-col justify-center">
               <h3 className="text-2xl md:text-2xl font-bold text-foreground leading-tight">
                 <span className="text-teal-600">SAMVEDANA</span>{' '}  
 		<span className="text-[#01287E]">NEUROCARE</span>
               </h3>
-              <p className="text-sm md:text-lg text-muted-foreground leading-snug">
+              <p className="text-sm md:text-lg text-[#01287E] leading-snug">
                 Where science meets compassion
               </p>
             </div>

@@ -10,9 +10,9 @@ const Hero = () => {
   }, []);
 
   const stats = [
-    { icon: Users, value: '5000+', label: 'Patients Treated' },
-    { icon: Award, value: '15+', label: 'Years Experience' },
-    { icon: Stethoscope, value: '6', label: 'Specializations' },
+    { icon: Users, value: '1000+', label: 'Patients Treated' },
+    { icon: Award, value: '7+', label: 'Years Experience' },
+    { icon: Stethoscope, value: '10+', label: 'Specializations' },
     { icon: Clock, value: '24/7', label: 'Emergency Support' },
   ];
 
@@ -26,17 +26,16 @@ const Hero = () => {
             <div className="space-y-4">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
                 Expert Neurological Care in
-                <span className="text-primary"> Paldi</span>
+                <span className="text-primary"> Ahmedabad</span>
               </h1>
               
-              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed font-bold italic">
                 Comprehensive diagnosis and treatment for neurological disorders with 
-                compassionate, evidence-based care by Dr. Mauli Vora
-              </p>
+                compassionate, evidence-based care </p>
               
               <div className="text-lg text-foreground">
-                <p className="font-semibold">Dr. Mauli Vora</p>
-                <p className="text-muted-foreground">MBBS, MD, DNB Neuro</p>
+                <p className="font-bold">Dr. Mauli Vora</p>
+                <p className="text-muted-foreground font-semibold">Consultant Neurophysician -MBBS, MD, DNB Neurology</p>
               </div>
             </div>
 
@@ -93,11 +92,8 @@ const Hero = () => {
                 {/* Doctor Info Overlay */}
                 <div className="absolute bottom-8 left-8 right-8 bg-card/95 backdrop-blur-sm rounded-xl p-4 shadow-lg">
                   <h3 className="text-xl font-bold text-foreground">Dr. Mauli Vora</h3>
-                  <p className="text-primary font-semibold">Consultant Neurologist</p>
-                  <p className="text-sm text-muted-foreground mt-1">
-                    MBBS, MD, DNB Neuro • 2+ Years Experience
-                  </p>
-                </div>
+                  <p className="text-primary font-semibold">Consultant Neurophysician</p>
+                                  </div>
               </div>
             </div>
           </div>
@@ -105,10 +101,7 @@ const Hero = () => {
       </div>
 
       {/* Floating elements */}
-      <div className="absolute top-20 left-10 w-20 h-20 bg-primary/10 rounded-full animate-pulse-medical"></div>
-      <div className="absolute bottom-20 right-10 w-16 h-16 bg-accent/10 rounded-full animate-pulse-medical" style={{ animationDelay: '1s' }}></div>
-      <div className="absolute top-1/2 left-20 w-12 h-12 bg-primary/5 rounded-full animate-pulse-medical" style={{ animationDelay: '2s' }}></div>
-    </section>
+          </section>
   );
 };
 
