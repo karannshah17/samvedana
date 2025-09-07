@@ -233,7 +233,17 @@ const NewIndex = () => {
                         </div>
                         <div>
                           <div className="font-semibold text-foreground">Phone</div>
-                          <div className="text-primary font-bold text-lg tracking-wide">+91 8200 045 035</div>
+                          <div className="text-primary font-bold text-lg tracking-wide">+918200045035</div>
+                        </div>
+                      </div>
+
+                      <div className="flex items-center space-x-3">
+                        <div className="w-8 h-8 bg-primary/10 text-primary rounded-lg flex items-center justify-center">
+                          📧
+                        </div>
+                        <div>
+                          <div className="font-semibold text-foreground">Email</div>
+                          <div className="text-primary font-medium">samvedananeuro@gmail.com</div>
                         </div>
                       </div>
                       
@@ -243,7 +253,15 @@ const NewIndex = () => {
                         </div>
                         <div>
                           <div className="font-semibold text-foreground">Location</div>
-                          <div className="text-muted-foreground">Samvedana Neurocare, 504, Anikedhya Capitol 2 Complex, Nr. Mahalaxi Cross roads, Fatehpura, Paldi, Ahmedabad-380007</div>
+                          <div className="text-muted-foreground">
+                            Samvedana Neurocare
+                            <br />
+                            504, Anikedhya Capitol 2 Complex
+                            <br />
+                            Nr. Mahalaxi Cross road
+                            <br />
+                            Fatehpura, Paldi, Ahmedabad -380007
+                          </div>
                         </div>
                       </div>
                       
