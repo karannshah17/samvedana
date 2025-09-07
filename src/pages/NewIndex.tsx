@@ -147,53 +147,53 @@ const NewIndex = () => {
                   <div className="grid gap-6">
                     <ul className="space-y-6">
   <li className="flex items-center space-x-4">
-    <div className="w-10 h-10 flex items-center justify-center rounded-full bg-primary/20 text-primary shadow-md">
-      <span className="text-lg font-bold">✓</span>
+    <div className="w-12 h-12 flex items-center justify-center rounded-full bg-gradient-to-br from-primary/20 to-accent/20 shadow-lg">
+      <Stethoscope className="h-6 w-6 text-primary" />
     </div>
     <div>
-      <div className="text-xl font-semibold italic text-primary">Compassionate ,Personalised Neurology care</div>
-         </div>
-  </li>
-
-  <li className="flex items-center space-x-4">
-    <div className="w-10 h-10 flex items-center justify-center rounded-full bg-primary/20 text-primary shadow-md">
-      <span className="text-lg font-bold">✓</span>
-    </div>
-    <div>
-      <div className="text-xl font-semibold italic text-primary">State Of The Art Diagnostic Tools</div>
-          </div>
-  </li>
-
-  <li className="flex items-center space-x-4">
-    <div className="w-10 h-10 flex items-center justify-center rounded-full bg-primary/20 text-primary shadow-md">
-      <span className="text-lg font-bold">✓</span>
-    </div>
-    <div>
-      <div className="text-xl font-semibold italic text-primary">Evidence Based Medicine</div>
-      
+      <div className="text-lg font-semibold text-foreground">Compassionate, Personalized Neurology Care</div>
+      <div className="text-sm text-muted-foreground">Individualized treatment plans tailored to each patient's unique needs</div>
     </div>
   </li>
 
   <li className="flex items-center space-x-4">
-    <div className="w-10 h-10 flex items-center justify-center rounded-full bg-primary/20 text-primary shadow-md">
-      <span className="text-lg font-bold">✓</span>
+    <div className="w-12 h-12 flex items-center justify-center rounded-full bg-gradient-to-br from-primary/20 to-accent/20 shadow-lg">
+      <Stethoscope className="h-6 w-6 text-primary" />
     </div>
     <div>
-      <div className="text-xl font-semibold italic text-primary">Patient Education & Counselling</div>
-      
+      <div className="text-lg font-semibold text-foreground">State-of-the-Art Diagnostic Tools</div>
+      <div className="text-sm text-muted-foreground">Advanced technology for precise diagnosis and monitoring</div>
     </div>
-	
   </li>
-<li className="flex items-center space-x-4">
-    <div className="w-10 h-10 flex items-center justify-center rounded-full bg-primary/20 text-primary shadow-md">
-      <span className="text-lg font-bold">✓</span>
+
+  <li className="flex items-center space-x-4">
+    <div className="w-12 h-12 flex items-center justify-center rounded-full bg-gradient-to-br from-primary/20 to-accent/20 shadow-lg">
+      <Stethoscope className="h-6 w-6 text-primary" />
     </div>
     <div>
-      <div className="text-xl font-semibold italic text-primary">Collaborative Care With Other Specialists
-</div>
-      
+      <div className="text-lg font-semibold text-foreground">Evidence-Based Medicine</div>
+      <div className="text-sm text-muted-foreground">Treatment protocols based on latest scientific research and clinical studies</div>
     </div>
-	
+  </li>
+
+  <li className="flex items-center space-x-4">
+    <div className="w-12 h-12 flex items-center justify-center rounded-full bg-gradient-to-br from-primary/20 to-accent/20 shadow-lg">
+      <Stethoscope className="h-6 w-6 text-primary" />
+    </div>
+    <div>
+      <div className="text-lg font-semibold text-foreground">Patient Education & Counseling</div>
+      <div className="text-sm text-muted-foreground">Comprehensive guidance to help patients understand their condition</div>
+    </div>
+  </li>
+
+  <li className="flex items-center space-x-4">
+    <div className="w-12 h-12 flex items-center justify-center rounded-full bg-gradient-to-br from-primary/20 to-accent/20 shadow-lg">
+      <Stethoscope className="h-6 w-6 text-primary" />
+    </div>
+    <div>
+      <div className="text-lg font-semibold text-foreground">Collaborative Care with Other Specialists</div>
+      <div className="text-sm text-muted-foreground">Coordinated multidisciplinary approach for comprehensive treatment</div>
+    </div>
   </li>
 
 </ul>
@@ -210,7 +210,7 @@ const NewIndex = () => {
         <section id="contact" className="py-20 bg-gradient-to-br from-primary/5 to-accent/5">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div className="animate-fade-in space-y-8">
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+              <h2 className="text-3xl md:text-4xl font-bold" style={{ color: '#008E9E' }}>
                 Get Expert Neurological Care
               </h2>
               
@@ -220,65 +220,82 @@ const NewIndex = () => {
                 Contact us today!
               </p>
               
-              <div className="bg-card rounded-2xl p-8 shadow-[var(--shadow-card)] medical-card-hover">
+              <div className="bg-card rounded-2xl p-8 shadow-[var(--shadow-card)] medical-card-hover border border-primary/10">
                 <div className="grid md:grid-cols-2 gap-8">
                   
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-bold text-foreground">Contact Information</h3>
+                  <div className="space-y-6">
+                    <div className="text-center md:text-left">
+                      <h3 className="text-2xl font-bold text-foreground mb-2">Contact Information</h3>
+                      <div className="w-16 h-1 bg-gradient-to-r from-primary to-accent rounded-full mx-auto md:mx-0"></div>
+                    </div>
                     
-                    <div className="space-y-3 text-left">
-                      <div className="flex items-center space-x-3">
-                        <div className="w-8 h-8 bg-primary/10 text-primary rounded-lg flex items-center justify-center">
-                          📞
-                        </div>
-                        <div>
-                          <div className="font-semibold text-foreground">Phone</div>
-                          <div className="text-primary font-bold text-lg tracking-wide">+918200045035</div>
+                    <div className="space-y-5">
+                      <div className="bg-gradient-to-r from-primary/5 to-accent/5 rounded-xl p-4 border border-primary/10">
+                        <div className="flex items-start space-x-4">
+                          <div className="w-12 h-12 bg-gradient-to-br from-primary/20 to-accent/20 rounded-xl flex items-center justify-center shadow-lg">
+                            📞
+                          </div>
+                          <div className="flex-1">
+                            <div className="font-semibold text-foreground text-lg">Phone</div>
+                            <div className="text-primary font-bold text-xl tracking-wider">+91 8200 045 035</div>
+                            <div className="text-sm text-muted-foreground">Available during clinic hours</div>
+                          </div>
                         </div>
                       </div>
 
-                      <div className="flex items-center space-x-3">
-                        <div className="w-8 h-8 bg-primary/10 text-primary rounded-lg flex items-center justify-center">
-                          📧
-                        </div>
-                        <div>
-                          <div className="font-semibold text-foreground">Email</div>
-                          <div className="text-primary font-medium">samvedananeuro@gmail.com</div>
-                        </div>
-                      </div>
-                      
-                      <div className="flex items-center space-x-3">
-                        <div className="w-8 h-8 bg-primary/10 text-primary rounded-lg flex items-center justify-center">
-                          📍
-                        </div>
-                        <div>
-                          <div className="font-semibold text-foreground">Location</div>
-                          <div className="text-muted-foreground">
-                            Samvedana Neurocare
-                            <br />
-                            504, Anikedhya Capitol 2 Complex
-                            <br />
-                            Nr. Mahalaxi Cross road
-                            <br />
-                            Fatehpura, Paldi, Ahmedabad -380007
+                      <div className="bg-gradient-to-r from-primary/5 to-accent/5 rounded-xl p-4 border border-primary/10">
+                        <div className="flex items-start space-x-4">
+                          <div className="w-12 h-12 bg-gradient-to-br from-primary/20 to-accent/20 rounded-xl flex items-center justify-center shadow-lg">
+                            📧
+                          </div>
+                          <div className="flex-1">
+                            <div className="font-semibold text-foreground text-lg">Email</div>
+                            <div className="text-primary font-semibold text-lg">samvedananeuro@gmail.com</div>
+                            <div className="text-sm text-muted-foreground">We respond within 24 hours</div>
                           </div>
                         </div>
                       </div>
                       
-                      <div className="flex items-center space-x-3">
-                        <div className="w-8 h-8 bg-primary/10 text-primary rounded-lg flex items-center justify-center">
-                          🕒
+                      <div className="bg-gradient-to-r from-primary/5 to-accent/5 rounded-xl p-4 border border-primary/10">
+                        <div className="flex items-start space-x-4">
+                          <div className="w-12 h-12 bg-gradient-to-br from-primary/20 to-accent/20 rounded-xl flex items-center justify-center shadow-lg">
+                            📍
+                          </div>
+                          <div className="flex-1">
+                            <div className="font-semibold text-foreground text-lg">Location</div>
+                            <div className="text-muted-foreground leading-relaxed">
+                              Samvedana Neurocare
+                              <br />
+                              504, Anikedhya Capitol 2 Complex
+                              <br />
+                              Nr. Mahalaxi Cross road
+                              <br />
+                              Fatehpura, Paldi, Ahmedabad -380007
+                            </div>
+                          </div>
                         </div>
-                        <div>
-                          <div className="font-semibold text-foreground">Hours</div>
-                          <div className="text-muted-foreground">Mon-Sat: 11 AM to 8 PM</div>
+                      </div>
+                      
+                      <div className="bg-gradient-to-r from-primary/5 to-accent/5 rounded-xl p-4 border border-primary/10">
+                        <div className="flex items-start space-x-4">
+                          <div className="w-12 h-12 bg-gradient-to-br from-primary/20 to-accent/20 rounded-xl flex items-center justify-center shadow-lg">
+                            🕒
+                          </div>
+                          <div className="flex-1">
+                            <div className="font-semibold text-foreground text-lg">Hours</div>
+                            <div className="text-muted-foreground text-lg">Mon-Sat: 11 AM to 8 PM</div>
+                            <div className="text-sm text-muted-foreground">Sunday: Closed</div>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                   
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-bold text-foreground">Book Appointment</h3>
+                  <div className="space-y-6">
+                    <div className="text-center">
+                      <h3 className="text-2xl font-bold text-foreground mb-2">Book Appointment</h3>
+                      <div className="w-16 h-1 bg-gradient-to-r from-primary to-accent rounded-full mx-auto"></div>
+                    </div>
                     
                     <div className="space-y-3">
                       <a 
