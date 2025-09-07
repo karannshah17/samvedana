@@ -37,10 +37,11 @@ const Header = () => {
     { name: 'Movement Disorders', href: '/services/movement-disorders' },
     { name: 'Memory Disorders', href: '/services/memory-disorders' },
     { name: 'Neuropathy Treatment', href: '/services/neuropathy' },
+    { name: 'Myasthenia Gravis & Muscle Disorders', href: '/services/myasthenia-gravis' },
     { name: 'Meningoencephalitis', href: '/services/meningoencephalitis' },
     { name: 'Back Pain & Sciatica', href: '/services/back-pain-sciatica' },
     { name: 'Vertigo & Balance Disorders', href: '/services/vertigo-balance' },
-    { name: 'Multiple Sclerosis', href: '/services/multiple-sclerosis' },
+    { name: 'Multiple Sclerosis & Other Demyelination Disorders', href: '/services/multiple-sclerosis' },
     { name: 'Sleep Disorders', href: '/services/sleep-disorders' },
   ];
 

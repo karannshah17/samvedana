@@ -215,8 +215,9 @@ const NewIndex = () => {
               </h2>
               
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Take the first step towards better neurological health. 
-                Contact us today to schedule your consultation with Dr. Mauli Vora.
+                Take the first step towards better neurological health.
+                <br />
+                Contact us today!
               </p>
               
               <div className="bg-card rounded-2xl p-8 shadow-[var(--shadow-card)] medical-card-hover">
@@ -232,7 +233,7 @@ const NewIndex = () => {
                         </div>
                         <div>
                           <div className="font-semibold text-foreground">Phone</div>
-                          <div className="text-muted-foreground">+91 8200045035</div>
+                          <div className="text-primary font-bold text-lg tracking-wide">+91 8200 045 035</div>
                         </div>
                       </div>
                       
@@ -242,7 +243,7 @@ const NewIndex = () => {
                         </div>
                         <div>
                           <div className="font-semibold text-foreground">Location</div>
-                          <div className="text-muted-foreground">Paldi, Ahmedabad</div>
+                          <div className="text-muted-foreground">Samvedana Neurocare, 504, Anikedhya Capitol 2 Complex, Nr. Mahalaxi Cross roads, Fatehpura, Paldi, Ahmedabad-380007</div>
                         </div>
                       </div>
                       
@@ -252,7 +253,7 @@ const NewIndex = () => {
                         </div>
                         <div>
                           <div className="font-semibold text-foreground">Hours</div>
-                          <div className="text-muted-foreground">Mon-Sat: 9AM-7PM</div>
+                          <div className="text-muted-foreground">Mon-Sat: 11 AM to 8 PM</div>
                         </div>
                       </div>
                     </div>
