@@ -276,18 +276,6 @@ const NewIndex = () => {
                         </div>
                       </div>
                       
-                      <div className="bg-gradient-to-r from-primary/5 to-accent/5 rounded-xl p-4 border border-primary/10">
-                        <div className="flex items-start space-x-4">
-                          <div className="w-12 h-12 bg-gradient-to-br from-primary/20 to-accent/20 rounded-xl flex items-center justify-center shadow-lg">
-                            🕒
-                          </div>
-                          <div className="flex-1">
-                            <div className="font-semibold text-foreground text-lg">Hours</div>
-                            <div className="text-muted-foreground text-lg">Mon-Sat: 11 AM to 8 PM</div>
-                            <div className="text-sm text-muted-foreground">Sunday: Closed</div>
-                          </div>
-                        </div>
-                      </div>
                     </div>
                   </div>
                   
@@ -313,6 +301,19 @@ const NewIndex = () => {
                       >
                         WhatsApp
                       </a>
+                    </div>
+                    
+                    <div className="bg-gradient-to-r from-primary/5 to-accent/5 rounded-xl p-4 border border-primary/10">
+                      <div className="flex items-start space-x-4">
+                        <div className="w-12 h-12 bg-gradient-to-br from-primary/20 to-accent/20 rounded-xl flex items-center justify-center shadow-lg">
+                          🕒
+                        </div>
+                        <div className="flex-1">
+                          <div className="font-semibold text-foreground text-lg">Hours</div>
+                          <div className="text-muted-foreground text-lg">Mon-Sat: 11 AM to 8 PM</div>
+                          <div className="text-sm text-muted-foreground">Sunday: Closed</div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
