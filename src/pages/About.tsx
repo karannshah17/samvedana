@@ -5,17 +5,18 @@ const About = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      
-      <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-foreground mb-4">About Dr. Mauli Vora</h1>
-          <p className="text-xl text-muted-foreground">Expert Neurologist & Founder of Samvedana Neuro Care Clinic</p>
-        </div>
 
+      <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        {/* Intro */}
+        <div className="text-center mb-12">
+          <h1 className="text-4xl font-bold mb-4" style={{ color: '#008E9E' }}>About Dr. Mauli Vora</h1>
+                 </div>
+
+        {/* About + Photo */}
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <div>
-              <h2 className="text-2xl font-semibold text-foreground mb-4">Professional Background</h2>
+              <h2 className="text-2xl font-semibold mb-4" style={{ color: '#008E9E' }}>Professional Background</h2>
               <p className="text-muted-foreground leading-relaxed">
                 Dr. Mauli Vora is a distinguished neurologist with extensive experience in treating complex neurological conditions. 
                 With years of dedicated practice, Dr. Vora has established herself as a leading expert in neurological care, 
@@ -24,80 +25,69 @@ const About = () => {
             </div>
 
             <div>
-              <h2 className="text-2xl font-semibold text-foreground mb-4">Education & Expertise</h2>
-              <ul className="space-y-2 text-muted-foreground">
-                <li className="flex items-start">
-                  <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  Advanced training in Neurology
-                </li>
-                <li className="flex items-start">
-                  <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  Specialized expertise in Epilepsy management
-                </li>
-                <li className="flex items-start">
-                  <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  Stroke prevention and treatment specialist
-                </li>
-                <li className="flex items-start">
-                  <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  Movement disorders and Parkinson's disease expert
-                </li>
-              </ul>
+              <h2 className="text-2xl font-semibold mb-4" style={{ color: '#008E9E' }}>Our Mission</h2>
+              <p className="text-muted-foreground leading-relaxed">
+                At Samvedana NeuroCare, we are committed to providing compassionate, comprehensive neurological care. 
+                Our approach combines cutting-edge medical technology with personalized treatment plans to ensure the best 
+                possible outcomes for our patients.
+              </p>
             </div>
 
             <div>
-              <h2 className="text-2xl font-semibold text-foreground mb-4">Our Mission</h2>
+              <h2 className="text-2xl font-semibold mb-4" style={{ color: '#008E9E' }}>Our Vision</h2>
               <p className="text-muted-foreground leading-relaxed">
-                At Samvedana Neuro Care Clinic, we are committed to providing compassionate, comprehensive neurological care. 
-                Our approach combines cutting-edge medical technology with personalized treatment plans to ensure the best 
-                possible outcomes for our patients.
+                We envision a world where every individual has access to advanced neurological care delivered with empathy, 
+                precision, and integrity. Our goal is to not only treat neurological disorders but also improve the quality 
+                of life for patients and their families through awareness, education, and innovation.
               </p>
             </div>
           </div>
 
           <div className="text-center">
-            <img 
-              src={drMauliVora} 
-              alt="Dr. Mauli Vora - Neurologist" 
-              className="w-80 h-80 object-cover rounded-xl shadow-medical mx-auto mb-6"
-            />
-            <div className="bg-card p-6 rounded-xl shadow-card">
-              <h3 className="text-xl font-semibold text-foreground mb-2">Contact Information</h3>
-              <div className="space-y-2 text-muted-foreground">
-                <p>📞 Phone: +91 82000 45035</p>
-                <p>📧 Email: info@samvedananeurocare.in</p>
-                <p>📍 Location: Specialized Neurological Care</p>
-              </div>
+            <div className="relative w-80 h-85 mx-auto mb-6 rounded-2xl overflow-hidden shadow-2xl border-4 border-primary/20 transform hover:scale-105 transition duration-500">
+              <img 
+                src={drMauliVora} 
+                alt="Dr. Mauli Vora - Neurologist" 
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
 
-        <div className="mt-16">
-          <div className="bg-card p-8 rounded-xl shadow-card">
-            <h2 className="text-2xl font-semibold text-foreground mb-6 text-center">Why Choose Samvedana Neuro Care?</h2>
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">🧠</span>
-                </div>
-                <h3 className="text-lg font-semibold text-foreground mb-2">Expertise</h3>
-                <p className="text-muted-foreground">Advanced neurological expertise with years of specialized experience</p>
+        {/* Why Patients Choose Dr. Mauli Vora */}
+        <div className="mt-20">
+          <h2 className="text-3xl font-bold text-center mb-12" style={{ color: '#008E9E' }}>Why do patients choose Dr. Mauli Vora as their Doctor?</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Card 1 */}
+            <div className="rounded-2xl shadow-lg overflow-hidden transform transition duration-500 hover:-translate-y-2 hover:shadow-2xl">
+              <div className="h-84 overflow-hidden">
+                <img src={drMauliVora} alt="Reason 1" className="w-full h-full object-cover object-top" />
               </div>
-              
-              <div className="text-center">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">💝</span>
-                </div>
-                <h3 className="text-lg font-semibold text-foreground mb-2">Compassionate Care</h3>
-                <p className="text-muted-foreground">Patient-centered approach with personalized treatment plans</p>
+              <div className="p-8 bg-card min-h-[220px] flex flex-col justify-center">
+                <h3 className="text-2xl font-semibold mb-3" style={{ color: '#008E9E' }}>Unmatched Knowledge</h3>
+                <p className="text-muted-foreground text-lg leading-relaxed">Dr. Vora’s education, training, and professional qualifications are exceptional, making her a trusted expert in the field of neurology.</p>
               </div>
-              
-              <div className="text-center">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">🔬</span>
-                </div>
-                <h3 className="text-lg font-semibold text-foreground mb-2">Modern Technology</h3>
-                <p className="text-muted-foreground">State-of-the-art diagnostic and treatment facilities</p>
+            </div>
+
+            {/* Card 2 */}
+            <div className="rounded-2xl shadow-lg overflow-hidden transform transition duration-500 hover:-translate-y-2 hover:shadow-2xl">
+              <div className="h-84 overflow-hidden">
+                <img src={drMauliVora} alt="Reason 2" className="w-full h-full object-cover object-top" />
+              </div>
+              <div className="p-8 bg-card min-h-[220px] flex flex-col justify-center">
+                <h3 className="text-2xl font-semibold mb-3" style={{ color: '#008E9E' }}>Personalized Care</h3>
+                <p className="text-muted-foreground text-lg leading-relaxed">Every patient is treated with genuine respect, empathy, and attention, ensuring that individual needs are always prioritized.</p>
+              </div>
+            </div>
+
+            {/* Card 3 */}
+            <div className="rounded-2xl shadow-lg overflow-hidden transform transition duration-500 hover:-translate-y-2 hover:shadow-2xl">
+              <div className="h-84 overflow-hidden">
+                <img src={drMauliVora} alt="Reason 3" className="w-full h-full object-cover object-top" />
+              </div>
+              <div className="p-8 bg-card min-h-[220px] flex flex-col justify-center">
+                <h3 className="text-2xl font-semibold mb-3" style={{ color: '#008E9E' }}>Innovative Approach</h3>
+                <p className="text-muted-foreground text-lg leading-relaxed">Dr. Vora is actively engaged in research and the advancement of neurology, bringing innovative ideas and practices to her patients’ care.</p>
               </div>
             </div>
           </div>

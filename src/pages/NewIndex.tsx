@@ -66,7 +66,7 @@ const NewIndex = () => {
         <section id="services" className="py-20 bg-gradient-to-b from-background to-secondary/20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16 animate-fade-in">
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              <h2 className="text-[#008E9E] text-3xl md:text-4xl font-bold mb-4">
                 Our Specialized Services
               </h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
@@ -95,43 +95,35 @@ const NewIndex = () => {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               
               <div className="space-y-6 animate-fade-in">
-                <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+                <h2 className="text-[#008E9E]  text-3xl md:text-4xl font-bold">
                   About Dr. Mauli Vora
                 </h2>
                 
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  Dr. Mauli Vora is a highly skilled neurologist with extensive experience in 
-                  diagnosing and treating complex neurological disorders. With her compassionate 
-                  approach and evidence-based practice, she provides personalized care to each patient.
+                <p className="text-lg font-semibold leading-relaxed">
+                  Dr. Mauli Vora is one of the best neurologists in Ahmedabad who treats a broad range of disorders related to neurological conditions. She has done MBBS from BJ Medical College, Ahmedabad. She further pursued MD Medicine from the prestigious Civil Hospital & BJ Medical College ,Ahmedabad, and DrNB in Neurology from P. D. Hinduja Hospital, Mumbai. She is passionate about the holistic approach towards patients with wide range of neurological disorders like stroke, seizures, dementia, headache, vertigo, neuropathy, myopathy to name a few, with utmost care and compassion.
                 </p>
                 
                 <div className="space-y-4">
+                                    
                   <div className="flex items-center space-x-3">
                     <div className="w-8 h-8 bg-primary/10 text-primary rounded-lg flex items-center justify-center">
                       ✓
                     </div>
-                    <span className="text-foreground">MBBS, MD, DNB Neurology</span>
+                    <span className="font-semibold">7+ Years Clinical Experience</span>
                   </div>
                   
                   <div className="flex items-center space-x-3">
                     <div className="w-8 h-8 bg-primary/10 text-primary rounded-lg flex items-center justify-center">
                       ✓
                     </div>
-                    <span className="text-foreground">15+ Years Clinical Experience</span>
+                    <span className="font-semibold">1000+ Patients Successfully Treated</span>
                   </div>
                   
                   <div className="flex items-center space-x-3">
                     <div className="w-8 h-8 bg-primary/10 text-primary rounded-lg flex items-center justify-center">
                       ✓
                     </div>
-                    <span className="text-foreground">5000+ Patients Successfully Treated</span>
-                  </div>
-                  
-                  <div className="flex items-center space-x-3">
-                    <div className="w-8 h-8 bg-primary/10 text-primary rounded-lg flex items-center justify-center">
-                      ✓
-                    </div>
-                    <span className="text-foreground">Specialized in Complex Neurological Cases</span>
+                    <span className="font-semibold">Specialized in Complex Neurological Cases</span>
                   </div>
                 </div>
                 
@@ -225,11 +217,10 @@ const NewIndex = () => {
                   
                   <div className="space-y-6">
                     <div className="text-center md:text-left">
-                      <h3 className="text-2xl font-bold text-foreground mb-2">Contact Information</h3>
+                      <h3 className="text-[#01287E] text-2xl font-bold mb-2">Contact Information</h3>
                       <div className="w-16 h-1 bg-gradient-to-r from-primary to-accent rounded-full mx-auto md:mx-0"></div>
                     </div>
-                    
-                    <div className="space-y-5">
+                                       <div className="space-y-5 text-left">
                       <div className="bg-gradient-to-r from-primary/5 to-accent/5 rounded-xl p-4 border border-primary/10">
                         <div className="flex items-start space-x-4">
                           <div className="w-12 h-12 bg-gradient-to-br from-primary/20 to-accent/20 rounded-xl flex items-center justify-center shadow-lg">
@@ -237,7 +228,7 @@ const NewIndex = () => {
                           </div>
                           <div className="flex-1">
                             <div className="font-semibold text-foreground text-lg">Phone</div>
-                            <div className="text-primary font-bold text-xl tracking-wider">+91 8200 045 035</div>
+                            <div className="text-primary font-semibold text-xl tracking-wider">+91 8200045035</div>
                             <div className="text-sm text-muted-foreground">Available during clinic hours</div>
                           </div>
                         </div>
@@ -250,9 +241,8 @@ const NewIndex = () => {
                           </div>
                           <div className="flex-1">
                             <div className="font-semibold text-foreground text-lg">Email</div>
-                            <div className="text-primary font-semibold text-lg">samvedananeuro@gmail.com</div>
-                            <div className="text-sm text-muted-foreground">We respond within 24 hours</div>
-                          </div>
+                            <div className="text-primary font-semibold text-lg"><a href="mailto:samvedananeuro@gmail.com" className="text-primary underline">samvedananeuro@gmail.com</a></div>
+                                                      </div>
                         </div>
                       </div>
                       
@@ -263,14 +253,15 @@ const NewIndex = () => {
                           </div>
                           <div className="flex-1">
                             <div className="font-semibold text-foreground text-lg">Location</div>
-                            <div className="text-muted-foreground leading-relaxed">
+                            <div className="text-[#008E9E] font-semibold leading-relaxed">
                               Samvedana Neurocare
                               <br />
                               504, Anikedhya Capitol 2 Complex
                               <br />
                               Nr. Mahalaxi Cross road
                               <br />
-                              Fatehpura, Paldi, Ahmedabad -380007
+                              Fatehpura, Paldi 
+				<br/>Ahmedabad -380007
                             </div>
                           </div>
                         </div>
@@ -281,7 +272,7 @@ const NewIndex = () => {
                   
                   <div className="space-y-6">
                     <div className="text-center">
-                      <h3 className="text-2xl font-bold text-foreground mb-2">Book Appointment</h3>
+                      <h3 className="text-[#01287E] text-2xl font-bold  mb-2">Book Appointment</h3>
                       <div className="w-16 h-1 bg-gradient-to-r from-primary to-accent rounded-full mx-auto"></div>
                     </div>
                     
@@ -294,7 +285,7 @@ const NewIndex = () => {
                       </a>
                       
                       <a 
-                        href="https://wa.me/8200045035?text=Hi, I would like to book an appointment"
+                        href="https://wa.me/+918200045035?text=Hi, I would like to book an appointment"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="w-full btn-medical-outline block text-center"
@@ -308,11 +299,10 @@ const NewIndex = () => {
                         <div className="w-12 h-12 bg-gradient-to-br from-primary/20 to-accent/20 rounded-xl flex items-center justify-center shadow-lg">
                           🕒
                         </div>
-                        <div className="flex-1">
+                        <div className="flex-1 text-left">
                           <div className="font-semibold text-foreground text-lg">Hours</div>
-                          <div className="text-muted-foreground text-lg">Mon-Sat: 11 AM to 8 PM</div>
-                          <div className="text-sm text-muted-foreground">Sunday: Closed</div>
-                        </div>
+                          <div className="text-[#008E9E] font-semibold text-lg">Mon-Sat: 11 AM to 8 PM</div>
+                                                  </div>
                       </div>
                     </div>
                   </div>

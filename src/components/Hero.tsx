@@ -12,8 +12,7 @@ const Hero = () => {
   const stats = [
     { icon: Users, value: '1000+', label: 'Patients Treated' },
     { icon: Award, value: '7+', label: 'Years Experience' },
-    { icon: Stethoscope, value: '10+', label: 'Specializations' },
-    { icon: Clock, value: '24/7', label: 'Emergency Support' },
+        { icon: Clock, value: '24/7', label: 'Emergency Support' },
   ];
 
   return (
@@ -56,7 +55,7 @@ const Hero = () => {
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-8 border-t border-border">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-6 pt-8 border-t border-border">
               {stats.map((stat, index) => (
                 <div 
                   key={index}
