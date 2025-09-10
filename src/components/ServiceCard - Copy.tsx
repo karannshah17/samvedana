@@ -1,5 +1,4 @@
 import { ArrowRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
 
 interface ServiceCardProps {
   title: string;
@@ -41,13 +40,13 @@ const ServiceCard = ({ title, description, image, href, icon }: ServiceCardProps
             {description}
           </p>
           
-          <Link
-            to={href}
+          <a
+            href={href}
             className="inline-flex items-center text-primary font-semibold hover:text-primary-hover transition-colors duration-300 group"
           >
             Learn More
             <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
-          </Link>
+          </a>
         </div>
       </div>
     </div>

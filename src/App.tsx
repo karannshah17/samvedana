@@ -27,7 +27,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter  basename="/samvedana">
         <Routes>
           <Route path="/" element={<NewIndex />} />
           <Route path="/about" element={<About />} />

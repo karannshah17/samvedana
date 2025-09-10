@@ -133,7 +133,7 @@ const ContactUs: React.FC = () => {
                 </a>
 
                 <div className="text-center font-semibold text-[#01287E]">
-                  📍 Samvedana Neurocare<br/>
+                  📍 SAMVEDANA NEUROCARE<br/>
                   504, Anikedhya Capitol 2 Complex<br/>
                   Nr. Mahalaxi Cross road, Fatehpura, Paldi<br/>
                   Ahmedabad -380007
