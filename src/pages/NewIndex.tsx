@@ -206,7 +206,7 @@ const NewIndex = () => {
                 Get Expert Neurological Care
               </h2>
               
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto font-semibold ">
                 Take the first step towards better neurological health.
                 <br />
                 Contact us today!

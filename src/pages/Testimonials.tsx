@@ -8,44 +8,36 @@ const Testimonials = () => {
       name: "Rajesh Patel",
       condition: "Epilepsy Treatment",
       rating: 5,
-      feedback: "Dr. Mauli Vora's treatment has been life-changing. My seizures are now completely under control, and I can live a normal life again. Her compassionate approach and expertise made all the difference.",
-      date: "March 2024"
+      feedback: "Dr. Mauli Vora's treatment has been life-changing. My seizures are now completely under control, and I can live a normal life again. Her compassionate approach and expertise made all the difference."
     },
     {
       name: "Priya Shah",
       condition: "Migraine Management",
       rating: 5,
-      feedback: "After years of suffering from chronic migraines, Dr. Vora's personalized treatment plan has reduced my headache frequency by 80%. I'm finally able to work and enjoy life without constant pain.",
-      date: "February 2024"
+      feedback: "After years of suffering from chronic migraines, Dr. Vora's personalized treatment plan has reduced my headache frequency by 80%. I'm finally able to work and enjoy life without constant pain."
     },
     {
       name: "Amit Kumar",
       condition: "Stroke Recovery",
       rating: 5,
-      feedback: "The comprehensive stroke care I received at Samvedana Neuro Care was exceptional. Dr. Vora's expertise and the rehabilitation program helped me recover much faster than expected.",
-      date: "January 2024"
+      feedback: "The comprehensive stroke care I received at Samvedana Neuro Care was exceptional. Dr. Vora's expertise and the rehabilitation program helped me recover much faster than expected."
+      
     },
     {
       name: "Meera Joshi",
       condition: "Movement Disorders",
       rating: 5,
-      feedback: "My Parkinson's symptoms were affecting my daily life significantly. Dr. Vora's treatment approach has improved my mobility and quality of life tremendously. Highly recommended!",
-      date: "December 2023"
-    },
+      feedback: "My Parkinson's symptoms were affecting my daily life significantly. Dr. Vora's treatment approach has improved my mobility and quality of life tremendously. Highly recommended!"    },
     {
       name: "Suresh Agarwal",
       condition: "Memory Disorders",
       rating: 5,
-      feedback: "Dr. Vora's early intervention and treatment plan for my memory issues has been remarkable. Her thorough evaluation and personalized care approach is truly commendable.",
-      date: "November 2023"
-    },
+      feedback: "Dr. Vora's early intervention and treatment plan for my memory issues has been remarkable. Her thorough evaluation and personalized care approach is truly commendable."    },
     {
       name: "Kavita Sharma",
       condition: "Neuropathy Treatment",
       rating: 5,
-      feedback: "The neuropathic pain in my feet was unbearable. Dr. Vora's treatment has significantly reduced my pain levels, and I can walk comfortably again. Excellent care and follow-up.",
-      date: "October 2023"
-    }
+      feedback: "The neuropathic pain in my feet was unbearable. Dr. Vora's treatment has significantly reduced my pain levels, and I can walk comfortably again. Excellent care and follow-up."    }
   ];
 
   const renderStars = (rating: number) => {
@@ -114,10 +106,7 @@ const Testimonials = () => {
                             {testimonial.condition}
                           </p>
                         </div>
-                        <span className="text-xs text-muted-foreground">
-                          {testimonial.date}
-                        </span>
-                      </div>
+                                             </div>
                     </div>
                   </div>
                 </div>
